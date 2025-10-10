@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>McDowell's General Contracting And Handyman Services LLC</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom Font Import */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        
+        /* Tailwind configuration for the specified colors */
+        :root {
+            --color-primary: #0039b3; /* Deep Indigo/Navy to match business card */
+            --color-accent: #3b82f6; /* Medium Blue */
+            --color-text: #374151; /* Dark Grey */
+            --color-light: #f9fafb; /* Off-White/Light Grey */
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--color-light);
+            color: var(--color-text);
+        }
+
+        .text-primary { color: var(--color-primary); }
+        .bg-primary { background-color: var(--color-primary); }
+        .hover-accent:hover { background-color: var(--color-accent); }
+
+        .service-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Responsive CTA Button Styling */
+        .cta-button {
+            padding: 0.75rem 2rem;
+            border-radius: 9999px; /* Fully rounded */
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Navbar -->
+    <header class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo/Brand Name (using the uploaded image) -->
+                <a href="#" class="flex items-center space-x-2">
+                    <img src="DogLogo.png" 
+                         alt="Logo" 
+                         class="h-20 w-auto"> <!-- Logo size adjusted for visibility -->
+                    <div class="text-l whitespace-nowrap font-extrabold color-text tracking-tight sm:flex flex-col justify-center items-center text-center">
+                        McDowell's<br>
+                        General Contracting and<br>
+                        Handyman Services LLC
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links and Phone Number (Matching Card Info) -->
+                <nav class="hidden md:flex flex-nowrap space-x-6 items-center">
+                    <a href="#services" class="text-gray-700 hover:text-blue-600 font-medium transition duration-150">Services</a>
+                    <a href="#portfolio" class="text-gray-700 hover:text-blue-600 font-medium transition duration-150">Portfolio</a>
+                    <a href="#about" class="text-gray-700 hover:text-blue-600 font-medium transition duration-150">About-Us</a>
+                    
+                </nav>
+                <a href="tel:6239863561" class="hidden min-[480px]:flex text-xl font-bold text-primary hover:text-blue-600 transition duration-150">
+                        (623)-986-3561
+                    </a>
+
+                <!-- Mobile Menu Button (Placeholder for functionality) --
+                <button class="md:hidden text-primary focus:outline-none" aria-label="Toggle Menu">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu (Hidden by default, would be toggled by JS) -->
+    </header>
+
+    <!-- Hero Section: Focused on Renovations - Updated content -->
+    <section class="bg-primary text-white py-20 sm:py-32">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl sm:text-6xl font-extrabold mb-4 leading-tight">
+                Commercial & Residential <br> Contractor
+            </h1>
+            <!--
+            <p class="text-xl text-blue-200 mb-4 max-w-4xl mx-auto">
+                McDowell's General Contracting And Handyman Services LLC. Your trusted partner for renovations and repairs big or small.
+            </p>
+            -->
+            <p class="text-md text-blue-100 mb-10 font-semibold">
+                Licensed, Bonded & Insured | ROC# 359325
+            </p>
+            <a href="#contact" class="cta-button bg-blue-600 hover-accent text-white inline-block transition duration-300">
+                Contact Us
+            </a>
+        </div>
+    </section>
+
+    <!-- Services Section - Content unchanged, colors matched -->
+    <section id="services" class="py-16 sm:py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12 text-primary">Our Core Expertise</h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                
+                <!-- Service Card 1: Full Home Remodels -->
+                <div class="service-card bg-white p-6 rounded-xl shadow-lg border border-gray-100">
+                    <div class="text-blue-600 mb-4 inline-block">
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M 6 12 6 20 18 20 18 12 M 4 10 12 4 16 7 16 4 16 7 20 10"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-primary">Full Home Remodels</h3>
+                    <p class="text-gray-600 text-sm">Comprehensive planning and execution for large-scale interior and exterior transformations.</p>
+                </div>
+
+                <!-- Service Card 2: Kitchen & Bath -->
+                <div class="service-card bg-white p-6 rounded-xl shadow-lg border border-gray-100">
+                    <div class="text-blue-600 mb-4 inline-block">
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m 4,14 c 0,1 0,6 5,6 h 6 c 5 0 5,-5 5,-6 M 21 4 h -2 l -2 2 -2 -2 4 4 m -1.8 2 l -1 1.5 M 15 8 l -1.5 1.5 M 12.8 6 l -1.5 1"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-primary">Kitchen & Bath</h3>
+                    <p class="text-gray-600 text-sm">Modernizing the most important rooms with custom cabinetry, plumbing, and finishes.</p>
+                </div>
+
+                <!-- Service Card 3: Specialized Work -->
+                <div class="service-card bg-white p-6 rounded-xl shadow-lg border border-gray-100">
+                    <div class="text-blue-600 mb-4 inline-block">
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 4h2"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-primary">Commercial Remodels</h3>
+                    <p class="text-gray-600 text-sm">Flooring, Shelves, Jewelry Cases, Secure rooms and all commercial remodel needs.</p>
+                </div>
+
+                <!-- Service Card 4: Handyman Services -->
+                <div class="service-card bg-white p-6 rounded-xl shadow-lg border border-gray-100">
+                    <div class="text-blue-600 mb-4 inline-block">
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8h12a2 2 0 002-2V8a2 2 0 00-2-2h-2M6 18a2 2 0 002-2v-3a2 2 0 00-2-2H4a2 2 0 00-2 2v3a2 2 0 002 2h2z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-primary">Reliable Handyman</h3>
+                    <p class="text-gray-600 text-sm">Repairs, Maintenance, Fixture installation, and general property upkeep.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section: BEFORE & AFTER Photos -->
+    <section id="portfolio" class="bg-gray-50 py-16 sm:py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12 text-primary">Before & After Portfolio</h2>
+            <p class="text-center text-lg text-gray-600 mb-10 max-w-4xl mx-auto">
+                See the quality and transformation we bring to every project. Your vision is our blueprint.
+            </p>
+
+            <!-- Responsive Image Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                
+                <!-- Project 1: Kitchen Remodel -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100">
+                    <img src="Ron-before.jpg" alt="Before Kitchen Remodel" class="w-full h-48 object-cover">
+                    <img src="ron-after.jpg" alt="After Kitchen Remodel" class="w-full h-48 object-cover mt-px">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold text-primary">Modern Kitchen Upgrade</h3>
+                        <p class="text-gray-500 text-sm">Full gut and remodel, new cabinets, stone counters, and lighting.</p>
+                    </div>
+                </div>
+
+                <!-- Project 2: Bathroom Remodel -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100">
+                    <img src="bath-before.jpg" alt="Before Bathroom Remodel" class="w-full h-48 object-cover">
+                    <img src="bath-after.jpg" alt="After Bathroom Remodel" class="w-full h-48 object-cover mt-px">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold text-primary">Luxury Bathroom Oasis</h3>
+                        <p class="text-gray-500 text-sm">New tile shower, vanity, and overall redesign.</p>
+                    </div>
+                </div>
+                
+                <!-- Project 3: Living Space Renovation -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100">
+                    <img src="living-before.jpg" alt="Before Living Room Remodel" class="w-full h-48 object-cover">
+                    <img src="living-after.jpg" alt="After Living Room Remodel" class="w-full h-48 object-cover mt-px">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold text-primary">Open Concept Conversion</h3>
+                        <p class="text-gray-500 text-sm">New flooring, fireplace, and light fixtures.</p>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="https://www.facebook.com/mcdowellshandyman" class="text-blue-600 hover:text-primary font-medium transition duration-150">
+                    View Current Projects on our Facebook page &rarr;
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action/About Section - Updated content -->
+    <section id="about" class="bg-white py-16 sm:py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            
+            <!-- Text Content -->
+            <div>
+                <span class="text-blue-600 font-semibold uppercase tracking-wider mb-2 block">Meet the Owner</span>
+                <h2 class="text-3xl sm:text-4xl font-bold mb-6 text-primary">Committed to Quality and Integrity</h2>
+                <p class="text-lg text-gray-700 mb-6">
+                    David McDowell and the team at McDowell's General Contracting have been dedicated to delivering exceptional craftsmanship and reliable service with decades of experience. We operate on principles of transparent communication, practical experience, and pride in our workmanship.
+                </p>
+                <p class="text-md text-gray-600">
+                    We handle everything from a simple leaky sink to a full remodel. No job is too big or too small.
+            </div>
+
+            <!-- Image/Placeholder -->
+            <div class="rounded-xl overflow-hidden shadow-2xl">
+                <img src="about us image.jpg" 
+                     alt="General Contractors Working on a Site" class="w-full h-auto object-cover">
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Section - Updated content -->
+    <section id="contact" class="bg-primary py-16 sm:py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white p-8 sm:p-12 rounded-xl shadow-2xl max-w-3xl mx-auto">
+                <h2 class="text-3xl font-bold text-center mb-4 text-primary">Ready to Start Your Project?</h2>
+                <p class="text-center text-gray-600 mb-8">
+                    We do commercial and residential remodels, repairs and maintenance. Call, email or let us know below what you need, and we will get back to you quickly!
+                </p>
+                
+                <!-- Contact Details from Business Card -->
+                <div class="text-center mb-8 space-y-2">
+                    <p class="text-2xl font-bold text-blue-600">
+                        Call: <a href="tel:6239863561" class="hover:underline">(623) 986-3561</a>
+                    </p>
+                    <p class="text-lg text-gray-700">
+                        Email: <a href="mailto:djmc110@msn.com" class="text-blue-600 hover:underline">djmc110@msn.com</a>
+                    </p>
+                </div>
+
+                <!-- Simple Contact Form Mockup -->
+                <form action="#" method="POST" class="space-y-4">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+                        <input type="text" id="name" name="name" required
+                               class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-3 focus:ring-blue-500 focus:border-blue-500">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                        <input type="email" id="email" name="email" required
+                               class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-3 focus:ring-blue-500 focus:border-blue-500">
+                    </div>
+                    <div>
+                        <label for="phone" class="block text-sm font-medium text-gray-700">Phone (optional)</label>
+                        <input type="tel" id="phone" name="phone" placeholder="(623)555-5555"
+                               pattern="[0-9\s\-\(\)\+]{7,20}"
+                               class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-3 focus:ring-blue-500 focus:border-blue-500">
+                    </div>
+                    
+                    <div>
+                        <label for="project" class="block text-sm font-medium text-gray-700">Project Type (e.g., Kitchen Remodel, Leaky Sink etc.)</label>
+                        <input type="text" id="project" name="project"
+                               class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-3 focus:ring-blue-500 focus:border-blue-500">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-700">Details</label>
+                        <textarea id="message" name="message" rows="4" required
+                                  class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-3 focus:ring-blue-500 focus:border-blue-500"></textarea>
+                    </div>
+                    <div class="pt-2">
+                        <button type="submit" class="cta-button bg-blue-600 hover-accent text-white w-full transition duration-300">
+                            Send Message
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer - Updated content -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="mb-2">
+                <img src="DogLogo.png" alt="Logo" class="h-16 w-auto mx-auto">
+            </div>
+            <p class="text-sm text-gray-400">
+                McDowell's General Contracting And Handyman Services LLC 
+            </p>
+            <p class="text-sm font-medium text-blue-400 mt-1">
+                Licensed, Bonded, Insured. ROC# 359325
+            </p>
+            <div class="mt-4 space-x-4">
+                <a href="tel:6239863561" class="text-gray-400 hover:text-blue-400 text-sm">(623) 986-3561</a>
+                <span class="text-gray-500 text-sm">|</span>
+                <a href="mailto:djmc110@msn.com" class="text-gray-400 hover:text-blue-400 text-sm">djmc110@msn.com</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
